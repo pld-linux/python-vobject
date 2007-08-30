@@ -1,5 +1,6 @@
 #
 Summary:	Python module for parsing iCal data
+Summary(pl.UTF-8):	Moduł języka Python analizujący dane iCal
 Name:		python-vobject
 Version:	0.4.8
 Release:	1
@@ -15,6 +16,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Python module for parsing iCal data.
+
+%description -l pl.UTF-8
+Moduł języka Python analizujący dane iCal.
 
 %prep
 %setup -q -n vobject-%{version}
