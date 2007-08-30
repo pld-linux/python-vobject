@@ -42,23 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/ics_diff
 %dir %{py_sitedir}/vobject
 %{py_sitedir}/vobject-0.4.8-py2.5.egg-info
-%{py_sitedir}/vobject/__init__.pyc
-%{py_sitedir}/vobject/__init__.pyo
-%{py_sitedir}/vobject/base.pyc
-%{py_sitedir}/vobject/base.pyo
-%{py_sitedir}/vobject/behavior.pyc
-%{py_sitedir}/vobject/behavior.pyo
-%{py_sitedir}/vobject/hcalendar.pyc
-%{py_sitedir}/vobject/hcalendar.pyo
-%{py_sitedir}/vobject/icalendar.pyc
-%{py_sitedir}/vobject/icalendar.pyo
-%{py_sitedir}/vobject/ics_diff.pyc
-%{py_sitedir}/vobject/ics_diff.pyo
-%{py_sitedir}/vobject/midnight.pyc
-%{py_sitedir}/vobject/midnight.pyo
-%{py_sitedir}/vobject/to_pst.pyc
-%{py_sitedir}/vobject/to_pst.pyo
-%{py_sitedir}/vobject/vcard.pyc
-%{py_sitedir}/vobject/vcard.pyo
-%{py_sitedir}/vobject/win32tz.pyc
-%{py_sitedir}/vobject/win32tz.pyo
+%{py_sitedir}/vobject/*.py[co]
