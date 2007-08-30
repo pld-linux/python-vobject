@@ -1,19 +1,20 @@
 #
-Summary:	Python library for parsing iCal data
+Summary:	Python module for parsing iCal data
 Name:		python-vobject
 Version:	0.4.8
 Release:	1
 License:	GPLv2
-Group:		Development/Libraries
+Group:		Libraries/Python
 Source0:	http://vobject.skyhouseconsulting.com/vobject-%{version}.tar.gz
 # Source0-md5:	d681436476e2b1d7265412df30a02c96
 URL:		http://vobject.skyhouseconsulting.com/
-BuildRequires:	python-devel
+BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	python-setuptools
+BuildRequires:	rpmbuild(macros) >= 1.219
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Python library for parsing iCal data.
+Python module for parsing iCal data.
 
 %prep
 %setup -q -n vobject-%{version}
