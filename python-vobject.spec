@@ -1,4 +1,3 @@
-#
 Summary:	Python module for parsing iCal data
 Summary(pl.UTF-8):	Moduł języka Python analizujący dane iCal
 Name:		python-vobject
@@ -11,6 +10,7 @@ Source0:	http://vobject.skyhouseconsulting.com/vobject-%{version}.tar.gz
 URL:		http://vobject.skyhouseconsulting.com/
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	python-setuptools
+BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,12 +26,12 @@ components are understood in a sophisticated way.
 
 %description -l pl.UTF-8
 Vobject w zamierzeniu ma być pakietem do analizy i tworzenia plików
-vCard oraz vCalendar. Jest zaprojektowany w zgodzie z projektem
+vCard oraz vCalendar. Jest zaprojektowany zgodnie z projektem
 Fundacji Wolnego Oprogramowania o nazwie Chandler.
 
 Obecnie dobrze przetestowana jest obsługa plików iCalendar. Pliki
 vCard 3.0 także są obsługiwane i wszystkie dane powinny być
-importowalne jednakże tylko kilka komponentów jest zrozumiałych w
+importowane, jednakże tylko kilka komponentów jest zrozumiałych w
 wyrafinowany sposób.
 
 %prep
@@ -59,5 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/ics_diff
 %dir %{py_sitedir}/vobject
-%{py_sitedir}/vobject-0.4.8-py2.5.egg-info
 %{py_sitedir}/vobject/*.py[co]
+%{py_sitedir}/vobject-*.egg-info
