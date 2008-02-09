@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Moduł języka Python analizujący dane iCal
 Name:		python-vobject
 Version:	0.4.8
 Release:	1
-License:	Apache 1.1
+License:	Apache v1.1
 Group:		Libraries/Python
 Source0:	http://vobject.skyhouseconsulting.com/vobject-%{version}.tar.gz
 # Source0-md5:	d681436476e2b1d7265412df30a02c96
