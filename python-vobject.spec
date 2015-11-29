@@ -11,7 +11,7 @@ URL:		http://vobject.skyhouseconsulting.com/
 BuildRequires:	python-devel >= 1:2.4
 BuildRequires:	python-setuptools >= 1:0.6-1.c9
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
