@@ -2,7 +2,7 @@ Summary:	Python module for parsing iCal data
 Summary(pl.UTF-8):	Moduł języka Python analizujący dane iCal
 Name:		python-vobject
 Version:	0.8.1c
-Release:	6
+Release:	7
 License:	Apache v1.1
 Group:		Libraries/Python
 Source0:	http://vobject.skyhouseconsulting.com/vobject-%{version}.tar.gz
@@ -12,6 +12,7 @@ BuildRequires:	python-devel >= 1:2.4
 BuildRequires:	python-setuptools >= 1:0.6-1.c9
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.710
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -44,7 +45,7 @@ wyrafinowany sposób.
 rm -rf $RPM_BUILD_ROOT
 
 %py_install \
-	--install-purelib=%{py_sitedir} \
+	--install-purelib=%{py_sitescriptdir} \
 	--optimize=2 \
 	--root=$RPM_BUILD_ROOT \
 
@@ -57,8 +58,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/change_tz
 %attr(755,root,root) %{_bindir}/ics_diff
-%dir %{py_sitedir}/vobject
-%{py_sitedir}/vobject/*.py[co]
+%dir %{py_sitescriptdir}/vobject
+%{py_sitescriptdir}/vobject/*.py[co]
 %if "%{py_ver}" > "2.4"
-%{py_sitedir}/vobject-*.egg-info
+%{py_sitescriptdir}/vobject-*.egg-info
 %endif
